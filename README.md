@@ -61,7 +61,7 @@ sum_x_K1=sum(x.*K1')
 sum_x_K2=sum(x.*K2')
 sum_x_GS=sum(x.*GS')
 ```
-## 3. SPRENDINIAI.
+## 3. UŽDUOČIŲ REZULTATAI.
 ```
 stud_nr = 20174372
 P2 = 15
