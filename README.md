@@ -24,11 +24,11 @@ GMmin=mod(stud_nr,150)+250;
 A=vertcat(DL, K1,K2,-GS)
 b=[DLmax K1max K2max -GMmin]
 f=PK
-n=length(f); %kintamuju skaicius
-m=length(b); %nelygybes tipo ribojimu skaicius
+n=length(f); %kintamųjų skaičius
+m=length(b); %nelygybės tipo ribojimų skaičius
 ind_n=1:n; ind_m=1:m;
-ub=[]; %x virsutines ribos
-lb = zeros(n,1); %x apatines ribos
+ub=[]; %x viršutinės ribos
+lb = zeros(n,1); %x apatinės ribos
 options = optimset; options.Display='iter'; %options.LargeScale='off';
 %options.Algorithm='active-set';
 options.Algorithm='interior-point-legacy';
