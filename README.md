@@ -1,5 +1,6 @@
 # 3-LABORATORINIS/GAMYBOS PLANAVIMO UŽDAVINYS
 ### (FAILAS UŽDUOTIES IŠ MATLAB ĮKELTAS. PRIEDAS NR.1).
 ## SĄLYGA.
+![Salyga](https://user-images.githubusercontent.com/47916355/58371063-b093e000-7f16-11e9-928f-5afb55f25875.png)
 
 
