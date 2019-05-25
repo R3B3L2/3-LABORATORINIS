@@ -1,2 +1,3 @@
-# 3-Laboratorinis
-Optimizacijos uždavinys
+# 3-LABORATORINIS/GAMYBOS PLANAVIMO UŽDAVINYS
+### FAILAI UŽDUOTIES IŠ MATLAB ĮKELTI.
+### SĄLYGA.
