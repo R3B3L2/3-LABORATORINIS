@@ -1,3 +1,4 @@
+
 # 3-LABORATORINIS/GAMYBOS PLANAVIMO UŽDAVINYS
 ### (FAILAS UŽDUOTIES IŠ MATLAB ĮKELTAS. PRIEDAS NR.1).
 ## 1. SĄLYGA.
@@ -122,7 +123,7 @@ sum_x_GS = 544.9
 >> 
 
 ## 4. 3 UŽDUOTIES REALIZACIJA MATLAB.(Kai pridedama prekė "E").
-```
+```json
 DL  = [mod(stud_nr,2)+5    mod(stud_nr,3)+4   mod(stud_nr,4)+1    mod(stud_nr,5)+5 mod(stud_nr,6)+5 ];
 % prideta E mod(stud_nr,6)+5 
 %DL - vieno darbininko darbo laikas vienos rusies gaminio gamybai (val.)=
@@ -141,7 +142,7 @@ PK  = [mod(stud_nr,11)+60  mod(stud_nr,6)+50  mod(stud_nr,21)+20  mod(stud_nr,36
 % PK - pardavimo kaina (vnt.) = A,B,C,D;
 ```
 ## 5. 3 UŽDUOTIES REZULTATAI.(Kai pridedama prekė "E").
-```
+```json
 A =
      5     6     1     7     7
      4     6    10     7     7
