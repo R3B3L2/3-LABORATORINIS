@@ -10,15 +10,21 @@ close all
 format shortg
 stud_nr = 20174372
 DL  = [mod(stud_nr,2)+5    mod(stud_nr,3)+4   mod(stud_nr,4)+1    mod(stud_nr,5)+5  ];
+%DL - vieno darbininko darbo laikas vienos rusies gaminio gamybai (val.)=
+%A,B,C,D;
 K1  = [mod(stud_nr,7)+3    mod(stud_nr,5)+4   mod(stud_nr,9)+2    mod(stud_nr,3)+5  ];
+%K1 - 1 klases sanaudos vienam gaminiui = A,B,C,D;
 K2  = [mod(stud_nr,13)+2   mod(stud_nr,4)+7   mod(stud_nr,9)+4    mod(stud_nr,3)+3  ];
+%K2 - 2 klases sanaudos vienam gaminiui = A,B,C,D;
 K3  = [mod(stud_nr,6)+2    mod(stud_nr,7)+4   mod(stud_nr,6)+5    mod(stud_nr,3)+1  ];
+%K3 - 3 klases sanaudos vienam gaminiui = A,B,C,D;
 PK  = [mod(stud_nr,11)+60  mod(stud_nr,6)+50  mod(stud_nr,21)+20  mod(stud_nr,36)+70];
-DLmax=780;
-K1max=mod(stud_nr,100)*2+400;
-K2max=mod(stud_nr,300)+700;
-P2=15
-P3=50
+% PK - pardavimo kaina (vnt.) = A,B,C,D;
+DLmax=780;%Darbininku darbo laiko istekliai per 10 d.d.;
+K1max=mod(stud_nr,100)*2+400;% analogiska nelygybe 1 klases sanaudoms;
+K2max=mod(stud_nr,300)+700;% tokia pati nelygybe 2 klases sanaudoms;
+P2=15% 2 klases sanaudoms kai vnt. kaina 15EUR;
+P3=50% 3 klases = 50 EUR/vnt.;
 GS = [1 1 1 1];
 GMmin=mod(stud_nr,150)+250;
 A=vertcat(DL, K1,K2,-GS)
