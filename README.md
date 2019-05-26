@@ -67,7 +67,7 @@ sum_x_K1=sum(x.*K1')
 sum_x_K2=sum(x.*K2')
 sum_x_GS=sum(x.*GS')
 ```
-## 3. UŽDUOČIŲ REZULTATAI.
+## 3. 1-2 UŽDUOČIŲ REZULTATAI.
 ```
 stud_nr = 20174372
 P2 = 15
@@ -118,5 +118,79 @@ sum_x_DL = 2699.7
 sum_x_K1 = 3478.8
 sum_x_K2 = 4735.9
 sum_x_GS = 544.9
+```
+>> 
+
+## 4. 3 UŽDUOTIES REALIZACIJA MATLAB.(Kai pridedama prekė "E").
+```
+DL  = [mod(stud_nr,2)+5    mod(stud_nr,3)+4   mod(stud_nr,4)+1    mod(stud_nr,5)+5 mod(stud_nr,6)+5 ];
+% prideta E mod(stud_nr,6)+5 
+%DL - vieno darbininko darbo laikas vienos rusies gaminio gamybai (val.)=
+%A,B,C,D;
+K1  = [mod(stud_nr,7)+3    mod(stud_nr,5)+4   mod(stud_nr,9)+2    mod(stud_nr,3)+5  mod(stud_nr,6)+5];
+% prideta E mod(stud_nr,6)+5
+%K1 - 1 klases sanaudos vienam gaminiui = A,B,C,D;
+K2  = [mod(stud_nr,13)+2   mod(stud_nr,4)+7   mod(stud_nr,9)+4    mod(stud_nr,3)+3  mod(stud_nr,6)+5];
+% prideta E mod(stud_nr,6)+5
+%K2 - 2 klases sanaudos vienam gaminiui = A,B,C,D;
+K3  = [mod(stud_nr,6)+2    mod(stud_nr,7)+4   mod(stud_nr,6)+5    mod(stud_nr,3)+1  mod(stud_nr,6)+5];
+% prideta E mod(stud_nr,6)+5
+%K3 - 3 klases sanaudos vienam gaminiui = A,B,C,D;
+PK  = [mod(stud_nr,11)+60  mod(stud_nr,6)+50  mod(stud_nr,21)+20  mod(stud_nr,36)+70 mod(stud_nr,40)+30];
+% prideta E mod(stud_nr,40)+30
+% PK - pardavimo kaina (vnt.) = A,B,C,D;
+```
+## 5. 3 UŽDUOTIES REZULTATAI.(Kai pridedama prekė "E").
+```
+A =
+     5     6     1     7     7
+     4     6    10     7     7
+    12     7    12     5     7
+    -1    -1    -1    -1    -1
+
+b =780   544   972  -372
+f =69    52    28    78    42
+
+  Residuals:   Primal     Dual     Duality    Total
+               Infeas    Infeas      Gap       Rel
+               A*x-b    A'*y+z-f    x'*z      Error
+  ---------------------------------------------------
+  Iter    0:  1.45e+04 2.87e+02 1.33e+05 6.80e+04
+  Iter    1:  7.56e+03 1.01e-13 5.51e+04 5.36e+00
+  Iter    2:  6.99e+03 3.20e-13 6.80e+04 4.96e+00
+  Iter    3:  6.63e+03 1.35e-11 8.04e+05 4.70e+00
+  Iter    4:  6.19e+03 1.55e-09 1.51e+07 4.39e+00
+  Iter    5:  6.17e+03 9.58e-05 1.59e+11 4.38e+00
+  Iter    6:  6.16e+03 3.87e+01 1.28e+15 4.37e+00
+  Iter    7:  6.16e+03 3.72e+01 1.28e+15 4.37e+00
+
+=====================================================
+
+ P R A D I N I A I  D U O M E N Y S
+
+ Max Z=  69x1   52x2   28x3   78x4   42x5 
+
+   5 x1    6 x2    1 x3    7 x4    7 x5  <= 780.0 
+   4 x1    6 x2   10 x3    7 x4    7 x5  <= 544.0 
+  12 x1    7 x2   12 x3    5 x4    7 x5  <= 972.0 
+  -1 x1   -1 x2   -1 x3   -1 x4   -1 x5  <= -372.0 
+
+======================================================
+
+ R E Z U L T A T A I 
+
+ Tikslo funkcijos optimali reiksme = 32559.3694
+
+ Optimalus sprendinys:
+ x1 =  68.9129
+ x2 = 487.1001
+ x3 =  88.3426
+ x4 =   0.0196
+ x5 =   0.0013
+
+sum_x_DL =3355.7
+sum_x_K1 =4081.8
+sum_x_K2 =5296.9
+sum_x_GS =644.38
 ```
 >> 
